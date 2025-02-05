@@ -14,8 +14,9 @@ export default function Navbar() {
     { name: "Blog", href: "/blog" },
     { name: "Pages", href: "/pages" },
     { name: "About", href: "/about" },
-    { name: "Shop", href: "/shop" },
+    { name: "Shop", href: "/ourshops" },
     { name: "Contact", href: "/contact" },
+
   ]
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
@@ -25,7 +26,7 @@ export default function Navbar() {
       <nav className="flex items-center justify-between relative">
         {/* Logo */}
         <Link
-          href="/src/app/favicon.ico"
+          href="log.jpg"
           className="text-[20px] sm:text-[24px] leading-[32px] font-bold text-white z-50"
         >
           Food<span className="text-[#FF9F0D]">tuck</span>

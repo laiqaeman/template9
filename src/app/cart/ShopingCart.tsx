@@ -149,7 +149,7 @@ const ShoppingCart: React.FC = () => {
                   <td className="p-4">
                     <button 
                       onClick={() => handleRemoveItem(index)}
-                      className="text-red-500 hover:text-red-700 text-xl"
+                      className="text-red-500 hover:text-orange-700 text-xl"
                     >
                       ×
                     </button>

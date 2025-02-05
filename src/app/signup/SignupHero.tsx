@@ -1,28 +1,25 @@
+import Link from 'next/link';
 
-import React from 'react'
-import Link from 'next/link'
-
-function Hero() {
+export default function SignupHero() {
   return (
-    <section className='w-full bg-[url("/heropic.png")] bg-cover bg-no-repeat bg-center py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28'>
-      <div className='container mx-auto px-4'>
-        <div className='flex flex-col items-center'>
-          <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-white font-bold text-center mb-4 sm:mb-6'>
-            Sign up page
-          </h1>
-          <div className='text-base sm:text-lg md:text-xl flex gap-2 text-center justify-center'>
-            <Link href="/" className='text-white hover:text-[#FF9F0D] transition-colors duration-300'>
-              Home
-            </Link>
-            <span className='text-white'>/</span>
-            <Link href="/signup" className='text-[#FF9F0D]'>
-              Sign up
-            </Link>
-          </div>
+    <section 
+      className="w-full bg-cover bg-center py-16 sm:py-20 md:py-24 lg:py-28 flex items-center justify-center"
+      style={{ backgroundImage: 'url("/heropic.png")' }}
+    >
+      <div className="text-center text-white">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+          Sign Up Page
+        </h1>
+        <div className="text-lg flex gap-2 justify-center">
+          <Link href="/" className="hover:text-yellow-400 transition-colors duration-300">
+            Home
+          </Link>
+          <span>/</span>
+          <Link href="/signup" className="text-yellow-400">
+            Sign Up
+          </Link>
         </div>
       </div>
     </section>
-  )
+  );
 }
-
-export default Hero

@@ -6,6 +6,7 @@ import ChooseFromMenu from "@/components/HomePages/HomeMenu";
 import Aboutus from "@/components/HomePages/AboutUs";
 import TestimonialsSection from "@/components/HomePages/Testimonial";
 import BlogPost from "@/components/HomePages/BlogPosts";
+import ProductCards from "@/components/products/page";
 
 const Home = () => {
   return (
@@ -27,6 +28,8 @@ const Home = () => {
 
       {/* Testimonial component to display testimonial section */}
       <TestimonialsSection />
+
+      <ProductCards/>
 
       {/* Blog post component to display blog posts */}
       <BlogPost />
